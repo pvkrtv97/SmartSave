@@ -1,0 +1,30 @@
+.layout{
+    max-width: 400px;
+    width: 100%;
+    justify-content: center;
+    border: none;
+    padding: 5px;
+}
+.layout .nav-item{
+    max-width: 130px;
+    width: 100%;
+    text-align: center;
+}
+.layout .nav-item .nav-link{
+    color: #808080;
+    font-weight: 500;
+    border: none;
+}
+.layout .nav-item .nav-link.active{
+    font-weight: 600;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: none;
+}
+.tab-content{
+    max-width: 400px;
+    width: 100%;
+}
