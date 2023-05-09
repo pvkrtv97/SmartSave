@@ -1,10 +1,10 @@
-<section class="bg-light">
+<section class="signin_signup">
     <div class="container">
-        <div class="d-flex flex-wrap flex-row mw-100 w-100 vh-100">
-            <div class="p-2 mw-100 w-50 bg-white">
-                <div class="d-flex flex-column mw-100 w-100 h-100 align-items-center justify-content-center">
-                    <h4 class="logo">{{ title }}</h4>
-                    <h3>{{ welcome }}</h3>
+        <div class="d-flex flex-wrap flex-row mw-100 w-100 vh-100 overflow-hidden">
+            <div class="mw-100 w-50 bg-white form_area">
+                <div class="d-flex flex-column mw-100 w-100 align-items-center justify-content-center">
+                    <h4 class="logo mt-5">{{ title }}</h4>
+                    <h3 class="mt-5">{{ welcome }}</h3>
                     <p>{{ welcome_paragraph }}</p>
                     <ul ngbNav #nav="ngbNav" class="layout nav-tabs bg-light rounded-3">
                         <li ngbNavItem>
@@ -16,9 +16,9 @@
                                             <i class="bi bi-envelope"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingInput"
+                                            <input type="email" class="form-control" id="signinEmail"
                                                 placeholder="name@exmaple.com">
-                                            <label for="floatingInput">Email address</label>
+                                            <label for="signinEmail">Email address</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -26,9 +26,9 @@
                                             <i class="bi bi-lock"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="password" class="form-control" id="floatingPassword"
+                                            <input type="password" class="form-control" id="signinPassword"
                                                 placeholder="Password">
-                                            <label for="floatingPassword">Password</label>
+                                            <label for="signinPassword">Password</label>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary w-100 p-3 rounded-4">Continue</button>
@@ -44,9 +44,9 @@
                                             <i class="bi bi-person"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="floatingInput"
+                                            <input type="text" class="form-control" id="firstName"
                                                 placeholder="John">
-                                            <label for="floatingInput">First name</label>
+                                            <label for="firstName">First name</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -54,9 +54,9 @@
                                             <i class="bi bi-person"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="floatingInput"
+                                            <input type="text" class="form-control" id="lastName"
                                                 placeholder="Cena">
-                                            <label for="floatingInput">Last name</label>
+                                            <label for="lastName">Last name</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -64,9 +64,9 @@
                                             <i class="bi bi-person-vcard"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingInput"
+                                            <input type="email" class="form-control" id="userId"
                                                 placeholder="User ID">
-                                            <label for="floatingInput">User ID</label>
+                                            <label for="userId">User ID</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -74,9 +74,9 @@
                                             <i class="bi bi-telephone"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingInput"
+                                            <input type="text" class="form-control" id="phoneNumber"
                                                 placeholder="9876543210">
-                                            <label for="floatingInput">Phone number</label>
+                                            <label for="phoneNumber">Phone number</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -84,9 +84,9 @@
                                             <i class="bi bi-lock"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="password" class="form-control" id="floatingPassword"
+                                            <input type="password" class="form-control" id="createPassword"
                                                 placeholder="name@exmaple.com">
-                                            <label for="floatingPassword">Create password</label>
+                                            <label for="createPassword">Create password</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -94,9 +94,9 @@
                                             <i class="bi bi-lock"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="password" class="form-control" id="floatingPassword"
+                                            <input type="password" class="form-control" id="confirmPassword"
                                                 placeholder="Password">
-                                            <label for="floatingPassword">Confirm Password</label>
+                                            <label for="confirmPassword">Confirm Password</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -104,9 +104,9 @@
                                             <i class="bi bi-key"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="number" class="form-control" id="floatingInput"
+                                            <input type="text" class="form-control" id="otp"
                                                 placeholder="name@exmaple.com">
-                                            <label for="floatingInput">OTP</label>
+                                            <label for="otp">OTP</label>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary w-100 p-3 rounded-4">Continue</button>
@@ -122,9 +122,9 @@
                                             <i class="bi bi-envelope"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingInput"
+                                            <input type="email" class="form-control" id="adminEmail"
                                                 placeholder="name@exmaple.com">
-                                            <label for="floatingInput">Email address</label>
+                                            <label for="adminEmail">Email address</label>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
@@ -132,9 +132,9 @@
                                             <i class="bi bi-lock"></i>
                                         </span>
                                         <div class="form-floating">
-                                            <input type="password" class="form-control" id="floatingPassword"
+                                            <input type="password" class="form-control" id="adminPassword"
                                                 placeholder="Password">
-                                            <label for="floatingPassword">Password</label>
+                                            <label for="adminPassword">Password</label>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary w-100 p-3 rounded-4">Continue</button>
@@ -143,9 +143,10 @@
                         </li>
                     </ul>
                     <div [ngbNavOutlet]="nav" class="mt-2"></div>
+                    <p class="text-center mt-5 p-4 font-size-10">{{ description }}</p>
                 </div>
             </div>
-            <div class="p-2 mw-100 w-50">
+            <div class="p-0 mw-100 w-50">
                 <img src="../../assets/images/loginScreenImage.jpg" alt="loginScreen" class="w-100 h-100">
             </div>
         </div>
